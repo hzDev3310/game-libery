@@ -26,13 +26,13 @@ const Navbar = () => {
             <Link to={"/"}  > <Image src={logo} boxSize={"50px"} objectFit={"cover"} /></Link>
           </Box>
         </HStack>
-        <Box width={'100%'} display={{ sm: 'none', lg: 'block' }}>
+        <Box width={'100%'} display={{ base: "none", lg: "block" }}>
           <Searchbar searchValue={(e) => setSearchText(e)} />
         </Box>
 
         <ColorModeSwitch />
       </HStack>
-      <Box  paddingX={5} display={{ lg: 'none', sm: 'block' }}>
+      <Box  display={{ base: "block", lg: "none" }}>
 
         <Searchbar searchValue={(e) => setSearchText(e)} />
       </Box>
